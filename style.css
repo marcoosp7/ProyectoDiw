@@ -78,13 +78,13 @@ aside{
     background-color: #C2FFE1;
 }
 .lateral{
-    padding: 10%;
-    border: 1px solid black;
+    width: 60%;
     background-color: #000201;
     color: #FCE5C4;
     border-radius:20px;
     text-align: center;
     margin-top: 30px;
+
 }
 
 a{
@@ -101,8 +101,9 @@ a{
 .lateral:active {
     background-color: #032b16; /* Cambiado a un tono más oscuro de verde */
     }
-.lateral:visited{
-    background-color: orange;
+
+.fotoNoVisible{
+    background-color: white;
 }
 
 /*FOOTER*/
