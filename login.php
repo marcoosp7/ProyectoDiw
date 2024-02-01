@@ -1,19 +1,21 @@
 <?php
-    if(isset($_POST['user']) && isset($_POST['pass'])){
-        $checkUser = ["marcos", "oscar", "rio"];
-        $checkPassword = "cocodrilo";
+session_start();
 
-        $user = $_POST['user'];
-        $pass = $_POST['pass'];
+if (isset($_POST['user']) && isset($_POST['pass'])) {
+    $checkUser = ["marcos", "oscar", "rio"];
+    $checkPasswordHash = password_hash("cocodrilo", PASSWORD_DEFAULT);
 
-        if(in_array($user, $checkUser) && $pass == $checkPassword){
-            start_session();
-            $_SESSION['usuario'] = $user;
-            
-            header("Location: trabajadoresLogueados.php");
-        } else {
-            $error = "Error en la conexión";
-            header("Location: trabajadores.php?error=" . urlencode($error));
-        }
+    $user = $_POST['user'];
+    $pass = $_POST['pass'];
+
+    if (in_array(strtolower($user), $checkUser) && password_verify($pass, $checkPasswordHash)) {
+        $_SESSION['usuario'] = $user;
+        header("Location: trabajadoresLogueados.php");
+        exit();
+    } else {
+        $_SESSION['error'] = "Error en la conexión";
+        header("Location: trabajadores.php");
+        exit();
     }
+}
 ?>
