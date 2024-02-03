@@ -44,6 +44,7 @@ main{
     width: 80%;
     background-color: #C2FFE1;
     margin: 0 auto;
+    
 }
 
 main p{
@@ -53,7 +54,10 @@ main p{
     font-weight: bold;
     font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
     font-size: 1.5em;
+    color: #003D1F;
+    
 }
+
 h2{
     font-family:Georgia, 'Times New Roman', Times, serif;
     color: #003D1F;
@@ -142,6 +146,15 @@ padding-top: 10%;
     
 }
 
+
+.social-icon {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    opacity: 0.8; /* Puedes ajustar este valor según tus preferencias, siendo 1 totalmente visible y 0 totalmente transparente */
+}
 
 
 /*MEDIA QUERY*/

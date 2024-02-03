@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-yS0M2S1ZARqGJz5ZMCsPpS3yPqViuhMz5b05/55Vr4N9UlGcD5Un4u7JAn5IfrV+7" crossorigin="anonymous">
 </head>
 <style>
     body{
@@ -12,12 +13,14 @@
     }
     iframe{
         margin-left: 35%;     
-        margin-top: 10%;   
+        margin-top: 2%;   
     }
     a{
-        color: #FCE5C4;
-        text-decoration: none;
-        font-size: 1.5em;
+        text-align: none;
+        color: #003D1F;
+        font-size: 2em;
+        /* padding-top: 10%; */
+        margin-left: 2%;
     }
     button{
         padding: 1%;
@@ -25,8 +28,42 @@
         margin-top: 2%; 
     }
 
+    #portada {
+            margin-top: 2%;
+            display: block;
+            padding: 1%;
+            font-size: 1.5em;
+            text-align: center;
+            background-color: #003D1F;
+            color: #C2FFE1;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+
 </style>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ANDALUFLY</a>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Aerolinea</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
     <iframe
 src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d102385.9
 3545195044!2d-4.595561256226359!3d36.685067312488954!2m3!1f0!2f0!3f
@@ -37,6 +74,8 @@ src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d102385.9
 height="450" style="border:0;" allowfullscreen="" loading="lazy"
 referrerpolicy="no-referrer-when-downgrade"></iframe><br>
 
-<a href="index.html"><button>REGRESAR A LA PORTADA</button></a>
+<a href="index.html" id="portada">REGRESAR A LA PORTADA</a>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-rBSvZ8e2/D0H6h+8FQ9IrIxbVWq6jtwN/IinGML5dIrlFJ0YLtqMiwIamhO8wgCE" crossorigin="anonymous"></script>
+
 </html>

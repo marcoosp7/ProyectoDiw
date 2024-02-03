@@ -6,7 +6,6 @@
     }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,9 +34,16 @@
     }
     
     a{
-        color: #FCE5C4;
-        text-decoration: none;
-        font-size: 1.5em;
+        margin-top: 2%;
+            display: block;
+            padding: 1%;
+            font-size: 1.5em;
+            text-align: center;
+            background-color: #003D1F;
+            color: #C2FFE1;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
     }
     button{
         padding: 1%;
@@ -57,21 +63,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        border: 5px dashed #003D1F;
+        width: 43%;
+        margin: 0 auto;
     }
 
     label, input {
         margin: 1% 0;
         font-size: 2em;
     }
-    #portada{
-        margin-left: 11%;
-    }
-
-    
 </style>
 <body>
     <h2>ACCESO PARA TRABAJADORES</h2>
-    <div id="formu">
+    
         <form method="post" action="login.php">
             <label for="usuario">Usuario:</label>
             <input type="text" id="user" name="user">
@@ -81,8 +85,8 @@
             <br>
             <button id="btn" name="btn">Log in</button>
         </form>
-        <a href="index.html"><button id="portada">REGRESAR A LA PORTADA</button></a>
-    </div>
-    
+        
+   
+    <a href="index.html">REGRESAR A LA PORTADA</a>
 </body>
 </html>

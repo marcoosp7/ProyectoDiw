@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/img/iconoTarifa.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="styleTarifa.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-yS0M2S1ZARqGJz5ZMCsPpS3yPqViuhMz5b05/55Vr4N9UlGcD5Un4u7JAn5IfrV+7" crossorigin="anonymous">
 
     <title>Portada Web</title>
 
@@ -12,50 +14,110 @@
 <header>
     <h1>ANDALUFLY</h1>
 </header>
+<style>
+    table{
+        margin: 0 auto;
+        width: 80%;
+        font-size: 1.5em;
+        border-color: #003D1F;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    tr,td{
+        border-color: #003D1F;
+    }
+    #portada {
+            margin-top: 2%;
+            display: block;
+            padding: 1%;
+            font-size: 1.5em;
+            text-align: center;
+            background-color: #003D1F;
+            color: #C2FFE1;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+</style>
+
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Mi Sitio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
 
     <h2>Tarifas de Andalufly: Descubre el Cielo de Andalucía</h2>
-    <h3>Tarifa Basic: "Briza Andaluza"</h3>
-    <p>Descripción: Experimenta el encanto de la brisa andaluza con nuestra tarifa básica.
-        Incluye:
-        Asiento estándar.
-        Una pieza de equipaje de mano.
-        Refrescos y aperitivos a bordo.
-        Precio: Desde 49,99 € por trayecto.</p>
-    <h3>Tarifa Plus: "Sol Dorado"</h3>
-    <p>Descripción: Sumérgete en el sol dorado de Andalucía con nuestra tarifa Plus.
-        Incluye:
-        Asiento preferencial con mayor espacio para las piernas.
-        Dos piezas de equipaje de mano.
-        Selección gratuita de asiento.
-        Menú gourmet a bordo.
-        Acceso a la sala VIP (en aeropuertos seleccionados).
-        Precio: Desde 99,99 € por trayecto.</p>    
-    <h3>Tarifa Premium: "Cielo Estrellado"</h3>
-    <p>Descripción: Alcanza el cielo estrellado con nuestra tarifa Premium, diseñada para una experiencia inolvidable.
-        Incluye:
-        Asiento de primera clase con reclinación total.
-        Tres piezas de equipaje de mano.
-        Prioridad en el embarque y desembarque.
-        Menú gourmet exclusivo a bordo.
-        Entretenimiento premium y auriculares con cancelación de ruido.
-        Acceso a la sala VIP (en todos los aeropuertos).
-        Transporte terrestre exclusivo desde y hacia el aeropuerto.
-        Precio: Desde 249,99 € por trayecto.</p>
-
-    <h3>Tarifa Familia: "Aventura Familiar"</h3>
-    <p>Descripción: Disfruta de la aventura en familia con nuestra tarifa especial para viajes en grupo.
-        Incluye:
-        Descuentos especiales para niños.
-        Asientos adyacentes garantizados para la familia.
-        Prioridad en el embarque.
-        Kits de entretenimiento para niños.
-        Flexibilidad en cambios de fechas.
-        Precio: Desde 149,99 € por adulto y tarifas reducidas para niños.</p>
+    <table border="2">
+        <thead>
+            <th>TARIFA</th>
+            <th>QUÉ INCLUYE</th>
+            <th>PRECIO</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tarifa Basic: "Brisa Andaluza"</td>
+                <td>Asiento estándar.
+                    Una pieza de equipaje de mano.
+                    Refrescos y aperitivos a bordo.</td>
+                <td>Desde 49,99 € por trayecto.</td>
+            </tr>
+            <tr>
+                <td>Tarifa Plus: "Sol Dorado"</td>
+                <td>Asiento preferencial con mayor espacio para las piernas.
+                    Dos piezas de equipaje de mano.
+                    Selección gratuita de asiento.
+                    Menú gourmet a bordo.</td>
+                    <td>Desde 99,99 € por trayecto.</td>
+            </tr>
+            <tr>
+                <td>Tarifa Premium: "Cielo Estrellado"</td>
+                <td>Asiento de primera clase con reclinación total.
+                    Tres piezas de equipaje de mano.
+                    Prioridad en el embarque y desembarque.
+                    Menú gourmet exclusivo a bordo.
+                    Entretenimiento premium y auriculares con cancelación de ruido.
+                    Acceso a la sala VIP (en todos los aeropuertos).
+                    Transporte terrestre exclusivo desde y hacia el aeropuerto.</td>
+                <td>Desde 249,99 € por trayecto.</td>
+            </tr>
+            <tr>
+                <td>Tarifa Familia: "Aventura Familiar"</td>
+                <td>Descuentos especiales para niños.
+                    Asientos adyacentes garantizados para la familia.
+                    Prioridad en el embarque.
+                    Kits de entretenimiento para niños.
+                    Flexibilidad en cambios de fechas.</td>
+                <td>Precio: Desde 149,99 € por adulto y tarifas reducidas para niños.</td>
+            </tr>
+        </tbody>
+    </table>  
             
-    <a href="index.html">REGRESAR</a>
+    <a href="index.html" id="portada">REGRESAR A LA PORTADA</a>
 </body>
+   
+        <!-- Bootstrap JS (si usas el componente de navegación con collapse) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-rBSvZ8e2/D0H6h+8FQ9IrIxbVWq6jtwN/IinGML5dIrlFJ0YLtqMiwIamhO8wgCE" crossorigin="anonymous"></script>
+
 
 
 </html>
